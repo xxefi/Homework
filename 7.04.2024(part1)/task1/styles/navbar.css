@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Fonts.ttf);
+}
+* {
+  transition: 0.6s;
+  font-family: Inter;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.products .product-papper,
+.products .product-apple,
+.products .product-chesse,
+.products .product-corn,
+.products .product-mushroom,
+.products .product-garlic,
+.products .product-beef,
+.products .product-fish,
+.products .product-eggs,
+.products .product-coriander {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-left: 30px;
+  border: 1px solid;
+  border-radius: 35px;
+}
+.products .product-papper img,
+.products .product-apple img,
+.products .product-chesse img,
+.products .product-corn img,
+.products .product-mushroom img,
+.products .product-garlic img,
+.products .product-beef img,
+.products .product-fish img,
+.products .product-eggs img,
+.products .product-coriander img {
+  width: 100px;
+  margin: 30px;
+}
+.products .product-papper span,
+.products .product-apple span,
+.products .product-chesse span,
+.products .product-corn span,
+.products .product-mushroom span,
+.products .product-garlic span,
+.products .product-beef span,
+.products .product-fish span,
+.products .product-eggs span,
+.products .product-coriander span {
+  font-weight: bold;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=navbar.css.map */

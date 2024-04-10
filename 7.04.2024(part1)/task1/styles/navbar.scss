@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Fonts.ttf);
+}
+
+*{
+    transition: 0.6s;
+    font-family: Inter;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .product-papper,
+    .product-apple,
+    .product-chesse,
+    .product-corn,
+    .product-mushroom,
+    .product-garlic,
+    .product-beef,
+    .product-fish,
+    .product-eggs,
+    .product-coriander{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        margin-left: 30px;
+        border: 1px solid;
+        border-radius: 35px;
+
+        img{
+            width: 100px;
+            margin: 30px;
+        }
+        span{
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+}

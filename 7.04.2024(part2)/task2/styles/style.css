@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Fonts.ttf);
+}
+* {
+  font-family: Inter;
+}
+
+html, body {
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  width: 70vh;
+  height: 88vh;
+  background-color: #e2e2e2;
+  margin: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  justify-content: center;
+}
+.list-container img {
+  margin-top: 25px;
+  margin-left: 10vh;
+}
+.list-container span {
+  margin-left: 16px;
+}
+.list-container .text1-list, .list-container .text3-list, .list-container .text7-list, .list-container .text9-list, .list-container .text12-list {
+  background-color: #a5ccda;
+  padding: 13px;
+}
+.list-container .text2-list, .list-container .text5-list, .list-container .text11-list {
+  padding: 10px;
+}
+.list-container .text2-list .text2, .list-container .text2-list .text5, .list-container .text2-list .text11, .list-container .text5-list .text2, .list-container .text5-list .text5, .list-container .text5-list .text11, .list-container .text11-list .text2, .list-container .text11-list .text5, .list-container .text11-list .text11 {
+  text-decoration: line-through;
+}
+.list-container .text4-list, .list-container .text6-list, .list-container .text8-list, .list-container .text10-list {
+  background-color: #add8e6;
+  padding: 10px;
+}
+.list-container .x {
+  color: #8c1a24;
+}/*# sourceMappingURL=style.css.map */

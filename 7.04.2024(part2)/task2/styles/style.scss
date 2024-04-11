@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Fonts.ttf);
+}
+
+*{
+    font-family: Inter;
+}
+
+html, body{
+    margin: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    height: 88vh;
+    background-color: #e2e2e2;
+    margin: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 22px;
+    justify-content: center;
+
+    img{
+        margin-top: 25px;
+        margin-left: 10vh;
+    }
+    span{
+        margin-left: 16px;
+    }
+
+    .text1-list, .text3-list, .text7-list, .text9-list, .text12-list{
+        background-color: #a5ccda;
+        padding: 13px;
+    }
+
+    .text2-list, .text5-list, .text11-list{
+        padding: 10px;
+        .text2, .text5, .text11{
+            text-decoration: line-through;
+        }
+    }
+    .text4-list, .text6-list, .text8-list, .text10-list{
+        background-color: #add8e6;
+        padding: 10px;
+    }
+
+    .x{
+        color: #8c1a24;
+    }
+}

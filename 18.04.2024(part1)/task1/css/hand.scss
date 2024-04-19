@@ -1,0 +1,77 @@
+$hour-rotate-length: 50px;
+$minute-rotate-length: 70px;
+$second-rotate-length: 80px;
+
+.clock{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(0, 146, 146);
+    border-radius: 50%;
+    margin: 50px auto;
+    transform: rotate(90deg);
+
+    .hour-hand,
+    .minute-hand,
+    .second-hand{
+        position: absolute;
+        background: rgb(0, 146, 146);
+        transform-origin: 50% 100%;
+    }
+    .hour-hand{
+        width: 5px;
+        height: $hour-rotate-length;
+        top: 50%;
+        left: 50%;
+        margin-top: -$hour-rotate-length;
+    }
+    .minute-hand{
+        width: 4px;
+        height: $minute-rotate-length;
+        top: 50%;
+        left: 50%;
+        margin-top: -$minute-rotate-length;
+    }
+    .second-hand{
+        width: 3px;
+        height: $second-rotate-length;
+        top: 50%;
+        left: 50%;
+        margin-top: -$second-rotate-length;
+    }
+
+    @keyframes rotate-hour-hand{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes rotate-minute-hand {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes rotate-second-hand {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    .hour-hand{
+        animation: rotate-hour-hand 12h infinite linear;
+    }
+    .minute-hand{
+        animation: rotate-minute-hand 60min infinite linear;
+    }
+    .second-hand{
+        animation: rotate-second-hand 60s infinite linear;
+    }
+}

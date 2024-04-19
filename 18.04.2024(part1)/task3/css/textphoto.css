@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+}
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.elements {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.elements .textphoto1, .elements .textphoto2, .elements .textphoto3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -40px;
+}
+.elements .textphoto1 .textphoto1-text, .elements .textphoto1 .textphoto2-text, .elements .textphoto1 .textphoto3-text, .elements .textphoto2 .textphoto1-text, .elements .textphoto2 .textphoto2-text, .elements .textphoto2 .textphoto3-text, .elements .textphoto3 .textphoto1-text, .elements .textphoto3 .textphoto2-text, .elements .textphoto3 .textphoto3-text {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 250px;
+  font-size: 20px;
+  background-color: rgb(221, 221, 221);
+}
+.elements .textphoto1 .textphoto1-photo, .elements .textphoto1 .textphoto2-photo, .elements .textphoto1 .textphoto3-photo, .elements .textphoto2 .textphoto1-photo, .elements .textphoto2 .textphoto2-photo, .elements .textphoto2 .textphoto3-photo, .elements .textphoto3 .textphoto1-photo, .elements .textphoto3 .textphoto2-photo, .elements .textphoto3 .textphoto3-photo {
+  transition: 0.3s;
+  width: 450px;
+  height: 250px;
+}
+.elements .textphoto3:hover .textphoto3-text {
+  background-color: rgb(90, 90, 90);
+}
+.elements .textphoto3:hover .textphoto3-photo {
+  transform: scale(1.2);
+}/*# sourceMappingURL=textphoto.css.map */

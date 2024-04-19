@@ -1,0 +1,70 @@
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(0, 146, 146);
+  border-radius: 50%;
+  margin: 50px auto;
+  transform: rotate(90deg);
+}
+.clock .hour-hand,
+.clock .minute-hand,
+.clock .second-hand {
+  position: absolute;
+  background: rgb(0, 146, 146);
+  transform-origin: 50% 100%;
+}
+.clock .hour-hand {
+  width: 5px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+}
+.clock .minute-hand {
+  width: 4px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  margin-top: -70px;
+}
+.clock .second-hand {
+  width: 3px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+}
+@keyframes rotate-hour-hand {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-minute-hand {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-second-hand {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.clock .hour-hand {
+  animation: rotate-hour-hand 12h infinite linear;
+}
+.clock .minute-hand {
+  animation: rotate-minute-hand 60min infinite linear;
+}
+.clock .second-hand {
+  animation: rotate-second-hand 60s infinite linear;
+}/*# sourceMappingURL=hand.css.map */

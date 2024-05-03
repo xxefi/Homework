@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+* {
+  text-transform: uppercase;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100vh;
+  background-color: gray;
+  transition: all 0.4s ease-in-out;
+}
+.menu-bar img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+.menu-bar p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.text-container {
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.menu-active {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100vh;
+  background-color: gray;
+  transition: all 0.4s ease-in-out;
+  display: none;
+}
+.menu-active img {
+  display: flex;
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+}
+.menu-active p {
+  display: flex;
+  margin-left: 35px;
+  color: white;
+}
+.menu-active .category-menu {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+}
+.menu-active .category-menu .edit,
+.menu-active .category-menu .favorites,
+.menu-active .category-menu .history,
+.menu-active .category-menu .security,
+.menu-active .category-menu .settings {
+  transition: 0.4s;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+.menu-active .category-menu img {
+  width: 70px;
+  margin-left: 25px;
+}
+.menu-active .category-menu span {
+  color: white;
+  margin-left: 30px;
+  font-size: 18px;
+}/*# sourceMappingURL=menu.css.map */

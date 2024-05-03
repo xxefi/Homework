@@ -1,0 +1,230 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(211, 211, 211);
+}
+
+.price-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.price-container .one-container {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s;
+  height: 410px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+.price-container .one-container h1 {
+  font-size: 40px;
+  margin: 0;
+}
+.price-container .one-container h2 {
+  margin-top: 25px;
+}
+.price-container .one-container h2::after {
+  content: "";
+  display: block;
+  background-color: rgb(255, 3, 99);
+  height: 3px;
+  width: 260px;
+  margin-top: 10px;
+}
+.price-container .one-container h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.price-container .one-container .permonth {
+  opacity: 0.2;
+  font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+}
+.price-container .one-container .one,
+.price-container .one-container .two,
+.price-container .one-container .three,
+.price-container .one-container .four {
+  font-weight: bold;
+}
+.price-container .one-container .buy-button {
+  width: 100px;
+  padding: 13px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(255, 3, 99);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+.price-container .one-container .buy-button:hover {
+  background-color: gray;
+}
+.price-container .one-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.price-container .two-container {
+  background-color: white;
+  height: 410px;
+  border-radius: 15px;
+  margin-left: 20px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+.price-container .two-container h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.price-container .two-container h2 {
+  margin-top: 25px;
+}
+.price-container .two-container h2::after {
+  content: "";
+  display: block;
+  background-color: rgb(255, 145, 0);
+  height: 3px;
+  width: 260px;
+  margin-top: 10px;
+}
+.price-container .two-container .permonth {
+  opacity: 0.2;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+}
+.price-container .two-container .one,
+.price-container .two-container .two,
+.price-container .two-container .three,
+.price-container .two-container .four {
+  font-weight: bold;
+}
+.price-container .two-container .buy-button {
+  width: 100px;
+  padding: 13px;
+  background-color: rgb(255, 145, 0);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.price-container .two-container .buy-button:hover {
+  background-color: gray;
+}
+.price-container .two-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.price-container .three-container {
+  background-color: white;
+  height: 410px;
+  border-radius: 15px;
+  margin-left: 20px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+.price-container .three-container h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.price-container .three-container h2 {
+  margin-top: 25px;
+}
+.price-container .three-container h2::after {
+  content: "";
+  display: block;
+  background-color: rgb(0, 60, 255);
+  height: 3px;
+  width: 260px;
+  margin-top: 10px;
+}
+.price-container .three-container .permonth {
+  font-weight: bold;
+  opacity: 0.2;
+  font-size: 25px;
+  margin: 0;
+}
+.price-container .three-container .one,
+.price-container .three-container .two,
+.price-container .three-container .three,
+.price-container .three-container .four {
+  font-weight: bold;
+}
+.price-container .three-container .buy-button {
+  width: 100px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 60, 255);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.price-container .three-container .buy-button:hover {
+  background-color: gray;
+}
+.price-container .three-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.price-container .four-container {
+  background-color: white;
+  height: 410px;
+  margin-left: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+.price-container .four-container h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.price-container .four-container h2 {
+  margin-top: 25px;
+}
+.price-container .four-container h2::after {
+  content: "";
+  display: block;
+  background-color: rgb(2, 177, 2);
+  height: 3px;
+  width: 260px;
+  margin-top: 10px;
+}
+.price-container .four-container .permonth {
+  font-weight: bold;
+  opacity: 0.2;
+  margin: 0;
+  font-size: 25px;
+}
+.price-container .four-container .one,
+.price-container .four-container .two,
+.price-container .four-container .three,
+.price-container .four-container .four {
+  font-weight: bold;
+}
+.price-container .four-container .buy-button {
+  width: 100px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(2, 177, 2);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.price-container .four-container .buy-button:hover {
+  background-color: gray;
+}
+.price-container .four-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}/*# sourceMappingURL=price.css.map */

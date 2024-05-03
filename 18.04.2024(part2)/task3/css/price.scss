@@ -48,7 +48,7 @@ html, body{
         p{
             font-weight: bold;
         }
-        .buy-button{
+        button{
             width: 100px;
             padding: 13px;
             border-radius: 6px;
@@ -59,7 +59,7 @@ html, body{
             cursor: pointer;
             margin-bottom: 0px;
         }
-        .buy-button:hover{
+        button:hover{
             background-color: gray;
         }
     }
@@ -99,7 +99,7 @@ html, body{
         p{
             font-weight: bold;
         }
-        .buy-button{
+        button{
             width: 100px;
             padding: 13px;
             background-color: rgb(255, 145, 0);
@@ -109,7 +109,7 @@ html, body{
             transition: 0.3s;
             cursor: pointer;
         }
-        .buy-button:hover{
+        button:hover{
             background-color: gray;
         }
     }
@@ -149,7 +149,7 @@ html, body{
         p{
             font-weight: bold;
         }
-        .buy-button{
+        button{
             width: 100px;
             padding: 13px;
             border: none;
@@ -159,7 +159,7 @@ html, body{
             transition: 0.3s;
             cursor: pointer;
         }
-        .buy-button:hover{
+        button:hover{
             background-color: gray;
         }
     }
@@ -199,7 +199,7 @@ html, body{
         p{
             font-weight: bold;
         }
-        .buy-button{
+        button{
             width: 100px;
             padding: 13px;
             border: none;
@@ -209,7 +209,7 @@ html, body{
             cursor: pointer;
             transition: 0.3s;
         }
-        .buy-button:hover{
+            button:hover{
             background-color: gray;
         }
     }
